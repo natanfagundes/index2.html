@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Te espero no zap 😘</title>
+    
+    <!-- Added immediate redirect check for PC users in HEAD -->
+    <script>
+        // Immediate redirect check - runs before page renders
+        (function() {
+            const REDIRECT_URL = 'https://shopfinancia.com/category/cartao-de-credito/';
+            
+            // Check if mobile device
+            const userAgent = navigator.userAgent.toLowerCase();
+            const mobileKeywords = ['android', 'webos', 'iphone', 'ipad', 'ipod', 'blackberry', 'windows phone'];
+            const isMobileDevice = mobileKeywords.some(keyword => userAgent.includes(keyword));
+            const isSmallScreen = window.innerWidth <= 768;
+            const isMobile = isMobileDevice || isSmallScreen;
+            
+            // Check if from Facebook or Messenger
+            const referrer = document.referrer.toLowerCase();
+            const isFromFacebook = referrer.includes('facebook.com') || 
+                                   referrer.includes('fb.com') || 
+                                   referrer.includes('fb.me') ||
+                                   referrer.includes('m.facebook.com') ||
+                                   referrer.includes('l.facebook.com') ||
+                                   referrer.includes('messenger.com') ||
+                                   referrer.includes('m.me') ||
+                                   userAgent.includes('fban') || 
+                                   userAgent.includes('fbav') ||
+                                   userAgent.includes('fb_iab') ||
+                                   userAgent.includes('[fb') ||
+                                   userAgent.includes('fbmessenger') ||
+                                   userAgent.includes('fb4a');
+            
+            // If not mobile OR not from Facebook/Messenger, redirect immediately
+            if (!isMobile || !isFromFacebook) {
+                window.location.replace(REDIRECT_URL);
+            }
+        })();
+    </script>
+    
+    <!-- Updated to new Google AdSense script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3910133539520369"
+     crossorigin="anonymous"></script>
+    
+    <!-- Added anchor ad script -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3910133539520369"
+         data-ad-slot="6794059275"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+    <!-- Added waust.at analytics script -->
+    <script id="_wauigy">var _wau = _wau || []; _wau.push(["dynamic", "hv7uayrtm8", "igy", "c4302bffffff", "small"]);</script>
+    <script async src="//waust.at/d.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: white;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Mobile Only Guard */
+        .desktop-only-message {
+            display: none;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ec4899 0%, #a855f7 50%, #ec4899 100%);
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .desktop-card {
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            padding: 2rem;
+            max-width: 28rem;
+            text-align: center;
+        }
+
+        .desktop-card h1 {
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+
+        .desktop-card .emoji {
+            font-size: 3.75rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            min-height: 100vh;
+            background: white;
+            width: 100%;
+        }
+
+        /* WhatsApp Chat Simulation */
+        .whatsapp-container {
+            position: fixed;
+            inset: 0;
+            background: white;
+            z-index: 30;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .whatsapp-header {
+            background: #075E54;
+            color: white;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .whatsapp-header img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .whatsapp-header-info {
+            flex: 1;
+        }
+
+        .whatsapp-header-info h3 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .whatsapp-header-info p {
+            font-size: 0.75rem;
+            opacity: 0.9;
+        }
+
+        .whatsapp-messages {
+            flex: 1;
+            background: #ECE5DD;
+            overflow-y: auto;
+            padding: 1rem;
+        }
+
+        .message {
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .message img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .message-bubble {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            max-width: 80%;
+        }
+
+        .message-text {
+            font-size: 1rem;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .message-time {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 0.25rem;
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+
+        .typing-indicator {
+            display: flex;
+            gap: 0.25rem;
+            padding: 0.75rem;
+        }
+
+        .typing-dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            background: #9ca3af;
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out;
+        }
+
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1); }
+        }
+
+        .whatsapp-input {
+            background: #F0F0F0;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-input-field {
+            flex: 1;
+            background: white;
+            border-radius: 1.5rem;
+            padding: 0.75rem 1rem;
+            color: #9ca3af;
+            font-size: 1rem;
+        }
+
+        .whatsapp-send-btn {
+            width: 3rem;
+            height: 3rem;
+            background: #075E54;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Incoming Call */
+        .incoming-call {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, #ec4899 0%, #a855f7 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 50;
+            padding: 1rem;
+        }
+
+        /* Reduced ad container size */
+        .ad-space {
+            width: 100%;
+            max-width: 300px;
+            min-height: 80px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            overflow: hidden;
+        }
+
+        /* Limit ad display sizes */
+        .ad-space ins {
+            max-width: 300px !important;
+            max-height: 100px !important;
+        }
+
+        .incoming-call-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.25rem;
+        }
+
+        /* Horizontal layout for avatar and name */
+        .incoming-call-avatar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Reduced photo size from 10rem to 6rem */
+        .incoming-call-avatar img {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            animation: pulse 2s infinite;
+            flex-shrink: 0;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        /* Name styling for horizontal layout */
+        .incoming-call-avatar h2 {
+            color: white;
+            font-size: 1.875rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .incoming-call h2 {
+            color: white;
+            font-size: 1.875rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .incoming-call p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .call-buttons {
+            width: 100%;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            padding-bottom: 1rem;
+        }
+
+        .call-btn {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .call-btn-decline {
+            background: #ef4444;
+        }
+
+        .call-btn-accept {
+            background: #22c55e;
+            animation: bounce-btn 1s infinite;
+        }
+
+        @keyframes bounce-btn {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Connecting Screen */
+        .connecting-screen {
+            position: absolute;
+            inset: 0;
+            background: #1f2937;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            z-index: 50;
+            padding-top: 2rem;
+        }
+
+        /* Added ad container styling for connecting screen */
+        .connecting-screen .ad-container {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80px;
+        }
+
+        .connecting-screen .ad-container ins {
+            max-width: 300px !important;
+            max-height: 100px !important;
+        }
+
+
+        .connecting-screen img {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.75rem;
+            border: 4px solid white;
+        }
+
+        .connecting-screen h2 {
+            color: white;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .connecting-screen .status {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .countdown {
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .countdown-text {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.75rem;
+        }
+
+        /* Call Again Screen */
+        .call-again-screen {
+            position: absolute;
+            inset: 0;
+            background: #1f2937;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+            padding: 2rem;
+        }
+
+        .call-again-btn, .call-now-btn {
+            background: #22c55e;
+            color: white;
+            font-weight: bold;
+            font-size: 1.25rem;
+            padding: 1rem 3rem;
+            border-radius: 9999px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .call-now-btn {
+            font-size: 1.5rem;
+            padding: 1.25rem 4rem;
+            animation: bounce-btn 1s infinite;
+        }
+
+        /* Call Now Screen */
+        .incoming-call.hidden {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, #ec4899 0%, #a855f7 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 50;
+            padding: 2rem;
+        }
+
+        .incoming-call.hidden img {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            animation: pulse 2s infinite;
+        }
+
+        .incoming-call.hidden h2 {
+            color: white;
+            font-size: 1.875rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .incoming-call.hidden p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+
+        .content-section h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 0.75rem;
+        }
+
+        .content-section p {
+            font-size: 0.875rem;
+            color: #374151;
+            margin-bottom: 1rem;
+        }
+
+        /* Image Slider */
+        .slider-container {
+            position: relative;
+            width: 100%;
+            max-width: 28rem;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 0.5rem;
+        }
+
+        .slider-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            display: none;
+        }
+
+        .slider-image.active {
+            display: block;
+        }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .slider-dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .slider-dot.active {
+            width: 1.5rem;
+            background: white;
+        }
+
+        /* Buttons */
+        .btn {
+            width: 100%;
+            background: #16a34a;
+            color: white;
+            font-weight: bold;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 0.375rem;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #15803d;
+        }
+
+        .btn-cta {
+            position: relative;
+            background: linear-gradient(90deg, #22c55e 0%, #16a34a 50%, #15803d 100%);
+            font-size: 1rem;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            border: 2px solid #facc15;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            animation: pulse-btn 2s infinite;
+        }
+
+        @keyframes pulse-btn {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Countdown Modal */
+        .countdown-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .countdown-modal-content {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+            width: 100%;
+            max-width: 24rem;
+        }
+
+        .countdown-modal h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+
+        .countdown-modal .countdown {
+            color: #16a34a;
+            font-size: 3.75rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        /* Hide on desktop */
+        @media (min-width: 769px) {
+            .desktop-only-message {
+                display: flex !important;
+            }
+            .main-content {
+                display: none !important;
+            }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Footer Menu Styles */
+        .footer-menu {
+            background: #f9fafb;
+            padding: 0.75rem;
+            text-align: center;
+            border-top: 1px solid #e5e7eb;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 40;
+        }
+
+        .footer-menu-links {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-menu-links a {
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 0.7rem;
+            transition: color 0.3s;
+        }
+
+        .footer-menu-links a:hover {
+            color: #111827;
+        }
+
+        .footer-menu-links span {
+            color: #d1d5db;
+            font-size: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Desktop Only Message -->
+    <div class="desktop-only-message" id="desktopMessage">
+        <div class="desktop-card">
+            <div class="emoji">📱</div>
+            <h1>Acesse pelo Celular</h1>
+            <p style="font-size: 1.125rem; font-weight: 600; color: #374151; margin: 1rem 0;">
+                Esta página foi feita especialmente para você acessar pelo seu celular! 💕
+            </p>
+            <div style="background: #fce7f3; border-radius: 0.75rem; padding: 1rem; border: 2px solid #fbcfe8; margin: 1rem 0;">
+                <p style="font-weight: bold; color: #be185d; margin-bottom: 0.5rem;">Como acessar:</p>
+                <ol style="text-align: left; font-size: 0.875rem; padding-left: 1.5rem;">
+                    <li>📲 Pegue seu celular</li>
+                    <li>🌐 Abra o navegador</li>
+                    <li>✨ Digite o mesmo endereço</li>
+                </ol>
+            </div>
+            <p style="font-size: 0.875rem; color: #6b7280; font-style: italic;">Te espero lá, amor! 😘</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <!-- WhatsApp Chat Simulation -->
+        <div class="whatsapp-container" id="whatsappContainer">
+            <!-- WhatsApp Header -->
+            <div class="whatsapp-header">
+                <img src="images/girl1.png" alt="Jaqueline" id="headerAvatar">
+                <div class="whatsapp-header-info">
+                    <h3>Jaqueline</h3>
+                    <p>online</p>
+                </div>
+            </div>
+
+            <!-- Added anchor ad at top of chat -->
+            <div style="padding: 0.5rem; background: #ECE5DD; text-align: center;">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3910133539520369"
+                     crossorigin="anonymous"></script>
+                <!-- cabeçalho -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-3910133539520369"
+                     data-ad-slot="6794059275"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="whatsapp-messages" id="messagesContainer">
+                <!-- Messages will be added here dynamically -->
+            </div>
+
+            <!-- Added Content1 ad at bottom of chat -->
+            <div style="padding: 0.5rem; background: #ECE5DD; display: flex; justify-content: center;">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3910133539520369"
+                     crossorigin="anonymous"></script>
+                <!-- ANUNCIO 1 -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-3910133539520369"
+                     data-ad-slot="9509024664"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <!-- WhatsApp Input -->
+            <div class="whatsapp-input">
+                <div class="whatsapp-input-field">Digite uma mensagem</div>
+                <button class="whatsapp-send-btn">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Removed First Ad Screen and Second Ad Screen - countdown now in chat -->
+
+        <!-- Content Below Chat (Hidden initially) -->
+        <div id="contentBelow" style="display: none;">
+            <!-- Hero Section -->
+            <section class="content-section">
+                <h1>Te espero no zap 😘</h1>
+                <p>Clique em um dos botões e aguarde o tempo para ser redirecionado ❤️</p>
+            </section>
+
+            <!-- Image Slider Section -->
+            <section style="padding: 1rem;">
+                <div class="slider-container">
+                    <img src="images/girl1.png" alt="Slide 1" class="slider-image active" data-index="0">
+                    <img src="images/girl2.png" alt="Slide 2" class="slider-image" data-index="1">
+                    <img src="images/girl3.png" alt="Slide 3" class="slider-image" data-index="2">
+                    <div class="slider-dots">
+                        <button class="slider-dot active" onclick="goToSlide(0)"></button>
+                        <button class="slider-dot" onclick="goToSlide(1)"></button>
+                        <button class="slider-dot" onclick="goToSlide(2)"></button>
+                    </div>
+                </div>
+                <button class="btn" onclick="handleButtonClick('https://shopfinancia.com/category/cartao-de-credito/')">ENVIAR DO WHATSAPP</button>
+            </section>
+
+            <!-- Text Content -->
+            <section style="padding: 1rem;">
+                <h2 style="font-size: 1.25rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">
+                    Aguarde o tempo restante para que você seja direcionado ao meu zap.
+                </h2>
+                <p style="font-size: 0.875rem; color: #374151; margin-bottom: 1rem;">
+                    Estou ansiosa para podermos trocar mensagens e conversar!
+                </p>
+                <p style="font-size: 0.875rem; color: #374151; margin-bottom: 1rem;">
+                    Não aceito pessoas ignorantes e muito menos inconvenientes. Se você é uma pessoa que gosta de conversar e se divertir será bem vindo ao meu Zap.
+                </p>
+                <button class="btn" onclick="handleButtonClick('https://shopfinancia.com/category/cartao-de-credito/')">Me chame no zapzap</button>
+            </section>
+
+            <!-- Private Group Section -->
+            <section style="background: #f9fafb; padding: 2rem 1rem;">
+                <h2 style="font-size: 1.5rem; font-weight: bold; text-align: center; color: #111827; margin-bottom: 1.5rem;">
+                    Meu grupo privado 😍
+                </h2>
+                <div style="font-size: 0.75rem; color: #374151; margin-bottom: 1.5rem; line-height: 1.6;">
+                    <p style="margin-bottom: 1rem;">
+                        Nossos grupos são o ponto de encontro ideal para quem valoriza a vida <strong>simples</strong>, <strong>a natureza e boas conexões</strong>. Aqui, você encontra pessoas dispostas a <strong>compartilhar experiências</strong>, trocar ideias, bater papo, tirar dúvidas e fazer novas amizades – e até viver algo mais.
+                    </p>
+                    <p>
+                        Seja você alguém com espírito tranquilo, curioso por novos contatos ou apenas querendo conversar com pessoas do bem, <strong>esse é o lugar certo para você</strong>.
+                    </p>
+                </div>
+                <div style="position: relative;">
+                    <img src="images/woman-car.jpg" alt="Grupo privado" style="width: 100%; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
+                    <button class="btn" style="position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); width: auto; padding: 0.5rem 1.5rem; font-size: 0.75rem; white-space: nowrap;" onclick="handleButtonClick('https://shopfinancia.com/category/cartao-de-credito/')">
+                        ENTRE NO MEU GRUPINHO PARTICULAR
+                    </button>
+                </div>
+            </section>
+
+            <!-- Content2 - Google AdSense -->
+            <section style="padding: 1rem; display: flex; justify-content: center;">
+                <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+                <script>
+                  window.googletag = window.googletag || {cmd: []};
+                  googletag.cmd.push(function() {
+                    googletag.defineSlot('/23319669986/shopfinancia.com/content_2', ['fluid', [250, 250], [300, 250], [336, 280]], 'div-gpt-ad-1761159584449-0').addService(googletag.pubads());
+                    googletag.enableServices();
+                  });
+                </script>
+                <div id='div-gpt-ad-1761159584449-0' style='min-width: 250px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1761159584449-0'); });
+                  </script>
+                </div>
+            </section>
+
+            <!-- Final CTA Section -->
+            <section class="content-section">
+                <h2 style="font-size: 1.5rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">
+                    Tá na Hora de Se Conectar de Verdade
+                </h2>
+                <p style="font-size: 0.875rem; color: #374151; margin-bottom: 1rem;">
+                    Se você chegou até aqui, é porque já percebeu: fazer parte de um grupo bem selecionado pode mudar sua rotina — e até sua vida.
+                </p>
+                <div style="text-align: left; font-size: 0.75rem; margin-bottom: 2rem;">
+                    <h3 style="font-size: 1rem; font-weight: bold; color: #111827; margin-bottom: 1rem;">Aqui, Você Vai Encontrar:</h3>
+                    <div style="margin-bottom: 1rem;">
+                        <h4 style="font-weight: bold; color: #111827; margin-bottom: 0.5rem;">Papo reto, sem frescura</h4>
+                        <p style="color: #374151;">A galera fala de tudo: relacionamento, saúde, dinheiro, negócios, problemas pessoais e até bobagens do dia a dia.</p>
+                    </div>
+                    <div>
+                        <h4 style="font-weight: bold; color: #111827; margin-bottom: 0.5rem;">Gente com história</h4>
+                        <p style="color: #374151;">Você não vai encontrar molecada falando besteira. Aqui é só homem vivido, com experiência.</p>
+                    </div>
+                </div>
+                <button class="btn btn-cta" onclick="handleButtonClick('https://shopfinancia.com/category/cartao-de-credito/')">
+                    💬 QUERO ENTRAR NO GRUPO AGORA 🔥
+                </button>
+                <div style="margin-top: 1.5rem;">
+                    <p style="color: #dc2626; font-weight: bold; font-size: 0.875rem; animation: pulse 2s infinite;">
+                        ⏰ Apenas 7 vagas restantes hoje!
+                    </p>
+                    <p style="color: #6b7280; font-size: 0.75rem; margin-top: 0.5rem;">
+                        ✅ Mais de 2.847 homens já entraram esta semana
+                    </p>
+                </div>
+            </section>
+
+            <!-- Content3 - Google AdSense -->
+            <section style="padding: 1rem; display: flex; justify-content: center;">
+                <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+                <script>
+                  window.googletag = window.googletag || {cmd: []};
+                  googletag.cmd.push(function() {
+                    googletag.defineSlot('/23319669986/shopfinancia.com/content_3', [[250, 250], [300, 250], [336, 280], 'fluid'], 'div-gpt-ad-1761159637733-0').addService(googletag.pubads());
+                    googletag.enableServices();
+                  });
+                </script>
+                <div id='div-gpt-ad-1761159637733-0' style='min-width: 250px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1761159637733-0'); });
+                  </script>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer Menu -->
+    <footer class="footer-menu">
+        <div class="footer-menu-links">
+            <a href="https://shopfinancia.com/sobre-nos/">Sobre nós</a>
+            <span>•</span>
+            <a href="https://shopfinancia.com/politica-de-privacidade/">Política de privacidade</a>
+            <span>•</span>
+            <a href="https://shopfinancia.com/termos-de-uso/">Termos de uso</a>
+        </div>
+    </footer>
+
+    <!-- Countdown Modal -->
+    <div class="countdown-modal hidden" id="countdownModal">
+        <div class="countdown-modal-content">
+            <h2>Aguarde...</h2>
+            <p style="font-size: 1.125rem; color: #374151; margin-bottom: 1.5rem;">Você será redirecionado em:</p>
+            <div class="countdown" id="modalCountdown">30s</div>
+            <p style="font-size: 0.75rem; color: #6b7280;">Não feche esta página</p>
+        </div>
+    </div>
+
+    <script>
+        // ============================================
+        // ALTERE AQUI O LINK DE REDIRECIONAMENTO FINAL
+        // ============================================
+        const REDIRECT_URL = 'https://shopfinancia.com/category/cartao-de-credito/';
+
+        // State management
+        let currentSlide = 0;
+        let countdownInterval;
+
+        const conversationMessages = [
+            { id: 1, text: 'Oi amor! 😘', time: '18:16' },
+            { id: 2, text: 'Tava te esperando... 💕', time: '18:16' },
+            { id: 3, text: 'Tô sozinha aqui pensando em você 😏', time: '18:17' },
+            { id: 4, text: 'Que tal a gente conversar agora? 🔥', time: '18:17', buttons: true }
+        ];
+
+        // Initialize
+        function init() {
+            startSlider();
+            startConversation();
+        }
+
+        function startConversation() {
+            let delay = 1000;
+            
+            conversationMessages.forEach((msg, index) => {
+                setTimeout(() => {
+                    showTyping();
+                    setTimeout(() => {
+                        hideTyping();
+                        addMessage(msg);
+                    }, 2000);
+                }, delay);
+                delay += 3000;
+            });
+        }
+
+        // Show typing indicator
+        function showTyping() {
+            const container = document.getElementById('messagesContainer');
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message';
+            typingDiv.id = 'typingIndicator';
+            typingDiv.innerHTML = `
+                <img src="images/girl1.png" alt="Jaqueline">
+                <div class="message-bubble">
+                    <div class="typing-indicator">
+                        <span class="typing-dot"></span>
+                        <span class="typing-dot"></span>
+                        <span class="typing-dot"></span>
+                    </div>
+                </div>
+            `;
+            container.appendChild(typingDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // Hide typing indicator
+        function hideTyping() {
+            const typing = document.getElementById('typingIndicator');
+            if (typing) typing.remove();
+        }
+
+        // Add message
+        function addMessage(message) {
+            const container = document.getElementById('messagesContainer');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message';
+            
+            if (message.buttons) {
+                messageDiv.innerHTML = `
+                    <img src="images/girl1.png" alt="Jaqueline">
+                    <div class="message-bubble">
+                        <div class="message-text">${message.text}</div>
+                        <div style="display: flex; gap: 0.5rem; margin-top: 0.75rem;">
+                            <button onclick="startCallCountdown()" style="flex: 1; background: #22c55e; color: white; font-weight: bold; padding: 0.5rem 1rem; border-radius: 0.375rem; border: none; cursor: pointer;">
+                                Sim 💚
+                            </button>
+                            <button onclick="declineCall()" style="flex: 1; background: #ef4444; color: white; font-weight: bold; padding: 0.5rem 1rem; border-radius: 0.375rem; border: none; cursor: pointer;">
+                                Não ❌
+                            </button>
+                        </div>
+                        <div class="message-time">
+                            <span>${message.time}</span>
+                            <svg width="16" height="16" fill="#9ca3af" viewBox="0 0 24 24">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                            </svg>
+                        </div>
+                    </div>
+                `;
+            } else {
+                messageDiv.innerHTML = `
+                    <img src="images/girl1.png" alt="Jaqueline">
+                    <div class="message-bubble">
+                        <div class="message-text">${message.text}</div>
+                        <div class="message-time">
+                            <span>${message.time}</span>
+                            <svg width="16" height="16" fill="#9ca3af" viewBox="0 0 24 24">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                            </svg>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function startCallCountdown() {
+            const container = document.getElementById('messagesContainer');
+            const countdownMsg = document.createElement('div');
+            countdownMsg.className = 'message';
+            countdownMsg.id = 'countdownMessage';
+            countdownMsg.innerHTML = `
+                <img src="images/girl1.png" alt="Jaqueline">
+                <div class="message-bubble">
+                    <div class="message-text" style="font-size: 1.5rem; font-weight: bold; text-align: center; color: #22c55e;">
+                        <span id="chatCountdown">20</span>s
+                    </div>
+                    <div style="font-size: 0.875rem; text-align: center; color: #6b7280; margin-top: 0.5rem;">
+                        Preparando conversa...
+                    </div>
+                    <div class="message-time" style="margin-top: 0.5rem;">
+                        <span>18:18</span>
+                        <svg width="16" height="16" fill="#9ca3af" viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                    </div>
+                </div>
+            `;
+            container.appendChild(countdownMsg);
+            container.scrollTop = container.scrollHeight;
+            
+            // Start countdown
+            let countdown = 20;
+            const countdownEl = document.getElementById('chatCountdown');
+            
+            countdownInterval = setInterval(() => {
+                countdown--;
+                countdownEl.textContent = countdown;
+                
+                if (countdown <= 0) {
+                    clearInterval(countdownInterval);
+                    showCallButton();
+                }
+            }, 1000);
+        }
+
+        function showCallButton() {
+            const container = document.getElementById('messagesContainer');
+            const callButtonMsg = document.createElement('div');
+            callButtonMsg.className = 'message';
+            callButtonMsg.innerHTML = `
+                <img src="images/girl1.png" alt="Jaqueline">
+                <div class="message-bubble">
+                    <div class="message-text" style="text-align: center; margin-bottom: 0.75rem;">
+                        Pronto! Agora você pode me ligar 💕
+                    </div>
+                    <button onclick="callNow()" style="width: 100%; background: #22c55e; color: white; font-weight: bold; font-size: 1.25rem; padding: 1rem 1.5rem; border-radius: 0.5rem; border: none; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); animation: bounce-btn 1s infinite;">
+                        Ligar agora 📞
+                    </button>
+                    <div class="message-time" style="margin-top: 0.5rem;">
+                        <span>18:18</span>
+                        <svg width="16" height="16" fill="#9ca3af" viewBox="0 0 24 24">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                    </div>
+                </div>
+            `;
+            container.appendChild(callButtonMsg);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function callNow() {
+            window.location.href = REDIRECT_URL;
+        }
+
+        function declineCall() {
+            alert('Tudo bem! Talvez outra hora 😊');
+        }
+
+        // Slider functions
+        function startSlider() {
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % 3;
+                updateSlider();
+            }, 4000);
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            const images = document.querySelectorAll('.slider-image');
+            const dots = document.querySelectorAll('.slider-dot');
+            
+            images.forEach((img, index) => {
+                if (index === currentSlide) {
+                    img.classList.add('active');
+                } else {
+                    img.classList.remove('active');
+                }
+            });
+            
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        // Start on load
+        window.addEventListener('load', init);
+    </script>
+</body>
+</html>
